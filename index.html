@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+﻿-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,6 +6,7 @@
     <title>Підтримай наших героїв</title>
     <link href="styles.css" rel="stylesheet" />
     <link href="https://virus-corp.do.am/Zbir/images.ico" rel="icon" type="image/x-icon" />
+    <script src="https://www.revolvermaps.com/revmaps.js" async></script>
 </head>
 <body>
     <div class="banner">
@@ -39,6 +40,9 @@
                 <a href="https://youtu.be/s2dgKp0jsZs" target="_blank">
                     <img src="https://virus-corp.do.am/Zbir/channels4_profile-3-.jpg" alt="Відкритий" />
                 </a>
+                <a href="https://youtu.be/0zikHQvrE54?si=VBKrb1orpCXJScjA" target="_blank">
+                    <img src="https://lh3.google.com/u/0/d/1JsLnVTNbtl-Y0yyvD2XVbLLPUGcckyDy=w647-h847-iv1" alt="Факти" />
+                </a>
             </div>
 
             <h2>Що ми виготовляємо для ЗСУ</h2>
@@ -48,7 +52,7 @@
                 <img src="https://lh3.google.com/u/0/d/1_9Mf7JZA_rC9O8zHp_mnJFaGLQq9UP-Z=w647-h777-iv1" alt="Product 3" />
                 <img src="https://lh3.google.com/u/0/d/1j4tOkXkbQYB58JEOcXoeS8u4ybs8GGoP=w647-h777-iv1" alt="Product 4" />
                 <img src="https://lh3.google.com/u/0/d/17-bUDdLbEcZzjoFL1HfPbp9w038trKwF=w647-h777-iv1" alt="Product 5" />
-                <img src="https://lh3.google.com/u/0/d/17-bUDdLbEcZzjoFL1HfPbp9w038trKwF=w647-h777-iv1" alt="Product 6" />
+                <img src="https://lh3.google.com/u/0/d/1iBKV4We6Hldp3PRWq3ImDfOGw6j-4Sp7=w1280-h847-iv1" alt="Product 6" />
             </div>
         </div>
 
@@ -87,32 +91,28 @@
                 
                 <a href="https://virus-corp.do.am/Zbir/Pidmoga.pdf" class="download-btn" download>Скачати файл</a>
                 <p>Не маєш можливості задонатити, роздрукуй та поширь.</p>
+                
+                <div class="qr-code">
+                    <img src="image.png" alt="QR Code" />
+                </div>
             </div>
         </div>
+    </div>
+
+    <div class="visitor-counter">
+        <script type="text/javascript">
+            document.write("<a href='https://www.revolvermaps.com/livestats/3f7hwyg0zn6/'><img src='https://www.revolvermaps.com/counter/3f7hwyg0zn6/320/90/brown/5/0/' width='320' height='90' alt='Map' style='border:0;'></a>");
+        </script>
     </div>
 
     <script>
         function copyToClipboard(text) {
             navigator.clipboard.writeText(text).then(function() {
-                alert('Реквізити скопійовано!');
-            }, function(err) {
-                console.error('Помилка при копіюванні: ', err);
+                alert("Скопійовано: " + text);
+            }, function() {
+                alert("Помилка при копіюванні.");
             });
         }
-
-        document.addEventListener('DOMContentLoaded', function () {
-            const gifs = document.querySelectorAll('.gif-gallery img');
-            gifs.forEach(gif => {
-                gif.addEventListener('mouseover', function () {
-                    gif.src = gif.src.replace('.png', '.gif');
-                    gif.style.transform = 'scale(1.1)';
-                });
-                gif.addEventListener('mouseout', function () {
-                    gif.src = gif.src.replace('.gif', '.png');
-                    gif.style.transform = 'scale(1)';
-                });
-            });
-        });
     </script>
 </body>
 </html>
